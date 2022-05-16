@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+ 
+*{
+   padding: 0;
+   margin:0;
+}
+ 
+body, html{
+   padding: 0;
+   margin: 0;
+}
+
+
+ 
+header{
+   background-color: lightblue;
+   height: 1cm;
+   display: flex;
+   justify-content: center;
+}
+ 
+ul li{
+  list-style: none;
+ 
+}
+ 
+p{
+   color:black;
+   font-family: 'Original Surfer', cursive;
+}
+ 
+.intro{
+   color: black;
+   padding: 40px;
+   padding-bottom: 40px;
+   font-size: 0.5cm;
+}
+ 
+
+.intro h1{
+   text-align: center;
+}
+ 
+nav ul li a{
+   text-decoration:none ;
+   color:black;
+   font-size: 16px;
+   font-family: 'Original Surfer', cursive;
+ 
+}
+main{
+   background-color: cornsilk;
+}
+.claseTitulo{
+   font-size: 3cm;
+   font-family: 'Original Surfer', cursive;
+}
+ 
+footer{
+   background-color: lightblue;
+   font-size: 0.3cm;
+   font-family: sans-serif;
+ 
+  
+}
+
+
+ 
+h1{
+   color: black;
+   border: whitesmoke;
+}
+ 
+
+
+.imagenes{
+    display: flex;   
+    flex-direction: row;
+   justify-content: wrap;
+
+
+
+}
+
+nav{
+display: flex;
+align-items: flex-start;
+}
+
+ul{
+display: flex;
+justify-content: space-evenly;
+}
+
+ul li a{
+    margin: 1cm;
+}
+
+main{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   align-items: flex-end;
+}
+
+.intro{
+   justify-content: flex-start;
+   align-items: flex-start;
+   margin-bottom: 6vw;
+}
+
+.mainIndex{
+   display: grid;
+   width: 100vw;
+   grid-template-rows: 20vw 44vw;
+   grid-template-columns: 27vw 45vw 27vw;
+   grid-template-areas:
+       "intro intro intro"
+       "imagenderecha video imagenizquierda";
+   justify-content: center;
+   justify-items: center;
+   align-content: center;
+   padding-top: 2cm;
+   height:26cm;
+}
+
+img{
+   width: 150px;
+   height: 150px;
+}
+
+.intro{
+   grid-area: intro;
+}
+
+.imagenIzquierda{
+   grid-area: imagenIzquierda;
+   grid-row:2/2;
+   grid-column: 3/3;
+   height: 100%;
+   width: 100%;
+}
+
+
+
+.videoPanga{
+   grid-area: video;
+   grid-row: 2/2;
+   grid-column:2/2;
+   height: 100%;
+   width: 90%;
+}
+
+
+
+.imagenDerecha{
+   grid-area: imagenderecha;
+   grid-row: 2/2;
+   grid-column:1/1;
+   height: 100%;
+   width: 100%;
+
+}
+
+.imagenDerecha img {
+   width: 100%;
+   height: 60%;
+}
+
+.imagenIzquierda img {
+   width: 100%;
+   height: 60%;
+}
+
+
+
+
+
+.titulo{
+   padding: 2cm;
+   font-size: 10vw;
+}
+
+
+
+.galeria{
+   display: grid;
+   grid-template-rows:  1fr 1fr 1fr ;
+   grid-template-columns: 2fr 1fr;
+   grid-template-areas: "surf insta"
+                        "vistas insta"
+                        "momentos insta";
+   height: 100%;
+}
+
+
+
+.momentos{
+ grid-area: momentos; 
+ display: flex;
+ flex-flow: row wrap; 
+ grid-column: 1/1;
+ grid-row: 3/3 ;
+
+}
+.vistas{
+   grid-area: vistas;
+   display: flex;
+   flex-flow: row wrap; 
+   grid-column: 1/1;
+   grid-row: 2/2;
+}
+
+.surf{
+grid-area: surf;
+display: flex;
+flex-flow: row wrap; 
+grid-column: 1/1;
+grid-row: 1/1;
+}
+
+.insta{
+   grid-area: insta;
+   width: 80%;
+   height: 80%;
+   display:flex;
+   flex-flow: row wrap;
+   grid-row: 1/3;
+   grid-column: 2/2;
+
+}
+
+.galeria h2{
+   width: 100%
+}
+
+.galeria figure{
+   width:18,5%;
+}
+
+.galeria img{
+   width: 180px;
+   height: 115px;
+}
+.galeria blockquote{
+   width: 20vh;
+   height: 70vh;
+}
+
+
+
+
+@media screen and (max-width:320px){
+   .galeria{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: start;
+      padding-bottom:2cm;
+
+
+
+
+   }
+
+   .galeria blockquote{
+      width: 49vh;
+      height: 70vh; }
+
+
+   nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 7px;
+      font-family: 'Original Surfer', cursive;
+  }
+  
+  ul li a {
+      margin: 2vh;
+  }
+
+  .galeria blockquote{
+   width: 56vh;
+   height: 70vh;
+}
+
+   .galeria img{
+   width: 320px;
+   height: 182px;
+}
+
+
+
+
+.mainIndex{
+   display: flex;
+   flex-direction: row; 
+   flex-wrap:wrap;
+   height:44cm;
+   padding-bottom: 1cm;
+
+}
+.imagenIzquierda{
+   width:100%;
+   height:25%;
+}
+.imagenDerecha{
+   width:100%;
+   height:25%;
+
+}
+
+.videoPanga{
+   width:100%;
+   height:25%;
+   margin-bottom: 10vh;
+}
+
+}
+
+
+
+
