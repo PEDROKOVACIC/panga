@@ -10,13 +10,22 @@ body, html{
    margin: 0;
 }
 
-
+h2, h3, p, figcaption{
+   font-family: 'Original Surfer', cursive;
+   
+}
  
 header{
    background-color: lightblue;
-   height: 1cm;
+   height: 2cm;
    display: flex;
-   justify-content: center;
+   flex-flow: row nowrap;
+
+}
+
+.logo{
+   width: 10%;
+   height:100%;
 }
  
 ul li{
@@ -26,9 +35,10 @@ ul li{
  
 p{
    color:black;
-   font-family: 'Original Surfer', cursive;
 }
  
+
+/*index*/
 .intro{
    color: black;
    padding: 40px;
@@ -69,6 +79,7 @@ footer{
 h1{
    color: black;
    border: whitesmoke;
+   font-family: 'Original Surfer', cursive;
 }
  
 
@@ -84,7 +95,9 @@ h1{
 
 nav{
 display: flex;
-align-items: flex-start;
+width:90%;
+justify-content: space-around;
+align-items: center;
 }
 
 ul{
@@ -176,10 +189,14 @@ img{
 
 
 
+/*galeria*/
+
 .titulo{
-   padding: 2cm;
+   padding: 2vh;
    font-size: 10vw;
 }
+
+
 
 
 
@@ -231,7 +248,7 @@ grid-row: 1/1;
 }
 
 .galeria h2{
-   width: 100%
+   width: 100%;
 }
 
 .galeria figure{
@@ -248,7 +265,7 @@ grid-row: 1/1;
 }
 
 
-
+/*celular*/
 
 @media screen and (max-width:320px){
    .galeria{
@@ -260,6 +277,10 @@ grid-row: 1/1;
 
 
 
+   }
+
+   header{
+      font-size:5px;
    }
 
    .galeria blockquote{
@@ -276,6 +297,10 @@ grid-row: 1/1;
   
   ul li a {
       margin: 2vh;
+  }
+  ul li{
+     display: flex;
+     flex-flow: row wrap;
   }
 
   .galeria blockquote{
@@ -297,7 +322,6 @@ grid-row: 1/1;
    flex-wrap:wrap;
    height:44cm;
    padding-bottom: 1cm;
-
 }
 .imagenIzquierda{
    width:100%;
@@ -309,14 +333,62 @@ grid-row: 1/1;
 
 }
 
+.titulo{
+   padding-top:8vh;
+}
+
 .videoPanga{
-   width:100%;
+   width:96%;
    height:25%;
-   margin-bottom: 10vh;
+   margin-bottom: 23vh;
+}
+
+blockquote{
+   min-width: none;
+
 }
 
 }
+/*tablet*/
+@media screen and (max-width:768px){
+   nav ul li a {
+      font-size: 11px;
+  }
+
+  .mainIndex {
+   padding-top: 0cm;
+  }
+
+   ul li a {
+      margin: 2vh;
+  }
+
+  nav {
+   justify-content: flex-start;
+  }
+
+  .imagenDerecha{
+     width:80%;
+  }
+
+  .imagenIzquierda{
+     width:80%;
+  }
 
 
 
+  }
+
+
+
+
+
+/* animaciones */
+
+li:hover{
+   transform: scale(1,5);
+   transition-property: all;
+   transition-duration: 1s;
+
+}
 
