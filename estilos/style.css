@@ -5,10 +5,6 @@
    margin:0;
 }
  
-body, html{
-   padding: 0;
-   margin: 0;
-}
 
 h2, h3, p, figcaption{
    font-family: 'Original Surfer', cursive;
@@ -137,7 +133,7 @@ main{
    height:26cm;
 }
 
-img{
+.mainIndex img{
    width: 150px;
    height: 150px;
 }
@@ -383,7 +379,7 @@ blockquote{
 
 
 
-/* animaciones */
+/* animaciones generales */
 
 li:hover{
    transform: scale(1,5);
@@ -391,4 +387,168 @@ li:hover{
    transition-duration: 1s;
 
 }
+
+
+/* nuestras tablas*/
+.linea{
+   background: black;
+   height: 5px;
+   width:100%;
+   display:block;
+}
+
+#inicio{
+   width: 50px;
+   height: 50px;
+   background: black;
+}
+
+.catalogo{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   width:95%;
+   margin: auto;
+   grid-gap: 10px;
+   padding: 40px 0;
+   overflow: hidden;
+}
+
+.catalogo img{
+   width: 100%;
+   height: 300px;
+   vertical-align: top;
+   object-fit: cover;
+   transition: transform 0.5s;
+}
+
+.galeria > a{
+   display:block;
+   position:relative;
+   overflow: hidden;
+   box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.catalogo a:hover{
+   filter:blur(2px);
+   transform: scale(1.3);
+}
+
+.light-box{
+   position: fixed;
+   top:0;
+   left:0;
+   background: rgba(0, 0, 0, .5);
+   transition: transform .3s ease-in-out;
+   width:100%;
+   height: 100vh;
+   z-index: 1000;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   transform: scale(0);
+}
+
+.light-box img{
+   width:75vw;
+   max-height: 70vh;
+}
+
+.light-box:target{
+   transform: scale(1);
+}
+
+.cerrar{
+   display:block;
+   position: absolute;
+   top: 40px;
+   right: 40px;
+   background: aqua;
+   color: bisque;
+   text-decoration: none;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 50%;
+
+}
+
+.siguiente{
+   display:block;
+   background: aqua;
+   color: bisque;
+   height: 30px;
+   width: 30px;
+   line-height: 30px;
+   text-decoration: none;
+   text-align: center;
+}
+
+
+/* familia panga*/
+
+.presentacion{
+   display:flex;
+   flex-flow: row wrap;
+}
+
+.tobi, .juancruz, .simon{
+   padding-top: 5vh;
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap
+
+}
+
+.perfilTobi{
+   display: flex;
+   flex-flow: column nowrap;
+   padding-left: 9vh;
+   padding-top:7vh;
+}
+
+.tobi img{
+width: 44vh;
+height: 29vh;
+}
+
+.tituloFamilia{
+   text-align: center;
+   margin-left: 30vh;
+   font-size: 11vh;
+}
+
+
+/*contacto*/
+
+.formulario{
+   display: flex;
+   flex-flow: column nowrap;
+   padding-bottom: 41vh;
+   padding-top: 10vh;
+   align-items: center;
+
+}
+
+.formulario h1{
+   font-size: 9vh;
+}
+
+form{
+   padding-top: 6vh;
+}
+
+.nombre, .comentario{
+   width:60vh;
+}
+
+.comentario{
+   height:9vh;
+}
+
+.email{
+   width:47vh;
+
+}
+
 
