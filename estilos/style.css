@@ -486,38 +486,56 @@ li:hover{
 
 
 /* familia panga*/
-
-.presentacion{
-   display:flex;
-   flex-flow: row wrap;
-}
-
-.tobi, .juancruz, .simon{
-   padding-top: 5vh;
-   width: 100%;
-   display: flex;
-   flex-flow: row nowrap
-
-}
-
-.perfilTobi{
-   display: flex;
-   flex-flow: column nowrap;
-   padding-left: 9vh;
-   padding-top:7vh;
-}
-
-.tobi img{
-width: 44vh;
-height: 29vh;
-}
-
-.tituloFamilia{
-   text-align: center;
-   margin-left: 30vh;
-   font-size: 11vh;
-}
-
+.presentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+ }
+  
+ .tobi, .juancruz, .simon, .pablo {
+  padding-top: 5vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+ }
+  
+ .perfilTobi, .perfilJuan, .perfilSimon, .perfilPablo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding-left: 9vh;
+  padding-top: 7vh;
+ }
+  
+ .tobi img, .juancruz img, .simon img, .pablo img {
+  width: 44vh;
+  height: 29vh;
+ }
+  
+ .tituloFamilia {
+  text-align: center;
+  margin-left: 30vh;
+  font-size: 11vh;
+ }
+  
+ .pablo{
+  padding-bottom: 2vh;
+ }
+ 
 
 /*contacto*/
 
@@ -550,5 +568,3 @@ form{
    width:47vh;
 
 }
-
-
