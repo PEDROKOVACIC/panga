@@ -1,0 +1,31 @@
+header{
+    background-color: lightblue;
+    height: 2cm;
+    display: flex;
+    flex-flow: row nowrap;
+    nav{
+     display: flex;
+     width:90%;
+     justify-content: space-around;
+     align-items: center;
+     ul{
+         display: flex;
+         justify-content: space-evenly;
+         }
+         li{
+             list-style: none;
+            
+           }
+           a{
+             text-decoration:none ;
+             color:black;
+             font-size: 16px;
+             font-family: 'Original Surfer', cursive;
+             margin: 1cm;
+           
+          }
+     }
+ 
+ 
+ 
+ }

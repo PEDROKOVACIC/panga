@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+header {
+  background-color: lightblue;
+  height: 2cm;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header nav li {
+  list-style: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: 'Original Surfer', cursive;
+  margin: 1cm;
+}
+
+.intro {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 6vw;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: intro;
+}
+
+.mainIndex {
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  -ms-grid-rows: 20vw 44vw;
+      grid-template-rows: 20vw 44vw;
+  -ms-grid-columns: 27vw 45vw 27vw;
+      grid-template-columns: 27vw 45vw 27vw;
+      grid-template-areas: "intro intro intro" "imagenderecha video imagenizquierda";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 2cm;
+  height: 26cm;
+}
+
+.mainIndex img {
+  width: 150px;
+  height: 150px;
+}
+
+.imagenIzquierda {
+  grid-area: imagenIzquierda;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  height: 100%;
+  width: 100%;
+}
+
+.imagenIzquierda img {
+  width: 100%;
+  height: 60%;
+}
+
+.videoPanga {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: video;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  height: 100%;
+  width: 90%;
+}
+
+.imagenDerecha {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: imagenderecha;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  height: 100%;
+  width: 100%;
+}
+
+.imagenDerecha img {
+  width: 100%;
+  height: 60%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h2, h3, p, figcaption {
+  font-family: 'Original Surfer', cursive;
+}
+
+.logo {
+  width: 10%;
+  height: 100%;
+}
+
+p {
+  color: black;
+}
+
+/*index*/
+.intro {
+  color: black;
+  padding: 40px;
+  padding-bottom: 40px;
+  font-size: 0.5cm;
+}
+
+.intro h1 {
+  text-align: center;
+}
+
+main {
+  background-color: cornsilk;
+}
+
+h1 {
+  color: black;
+  border: whitesmoke;
+  font-family: 'Original Surfer', cursive;
+}
+
+.claseTitulo {
+  font-size: 3cm;
+  font-family: 'Original Surfer', cursive;
+}
+
+footer {
+  background-color: lightblue;
+  font-size: 0.3cm;
+  font-family: sans-serif;
+}
+
+.imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: wrap;
+      -ms-flex-pack: wrap;
+          justify-content: wrap;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/*galeria*/
+.titulo {
+  padding: 2vh;
+  font-size: 10vw;
+}
+
+.galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "surf insta" "vistas insta" "momentos insta";
+  height: 100%;
+}
+
+.momentos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: momentos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  -ms-grid-row: 3;
+  grid-row: 3/3;
+}
+
+.vistas {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: vistas;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+}
+
+.surf {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: surf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+.insta {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: insta;
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+.galeria h2 {
+  width: 100%;
+}
+
+.galeria figure {
+  width: 18,5%;
+}
+
+.galeria img {
+  width: 180px;
+  height: 115px;
+}
+
+.galeria blockquote {
+  width: 20vh;
+  height: 70vh;
+}
+
+/*celular*/
+@media screen and (max-width: 320px) {
+  .galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-bottom: 2cm;
+  }
+  header {
+    font-size: 5px;
+  }
+  .galeria blockquote {
+    width: 49vh;
+    height: 70vh;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 7px;
+    font-family: 'Original Surfer', cursive;
+  }
+  ul li a {
+    margin: 2vh;
+  }
+  ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .galeria blockquote {
+    width: 56vh;
+    height: 70vh;
+  }
+  .galeria img {
+    width: 320px;
+    height: 182px;
+  }
+  .mainIndex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 44cm;
+    padding-bottom: 1cm;
+  }
+  .imagenIzquierda {
+    width: 100%;
+    height: 25%;
+  }
+  .imagenDerecha {
+    width: 100%;
+    height: 25%;
+  }
+  .titulo {
+    padding-top: 8vh;
+  }
+  .videoPanga {
+    width: 96%;
+    height: 25%;
+    margin-bottom: 23vh;
+  }
+  blockquote {
+    min-width: none;
+  }
+}
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+  nav ul li a {
+    font-size: 11px;
+  }
+  .mainIndex {
+    padding-top: 0cm;
+  }
+  ul li a {
+    margin: 2vh;
+  }
+  nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .imagenDerecha {
+    width: 80%;
+  }
+  .imagenIzquierda {
+    width: 80%;
+  }
+}
+
+/* animaciones generales */
+li:hover {
+  -webkit-transform: scale(1, 5);
+          transform: scale(1, 5);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+/* nuestras tablas*/
+.linea {
+  background: black;
+  height: 5px;
+  width: 100%;
+  display: block;
+}
+
+#inicio {
+  width: 50px;
+  height: 50px;
+  background: black;
+}
+
+.catalogo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.catalogo img {
+  width: 100%;
+  height: 300px;
+  vertical-align: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.galeria > a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.catalogo a:hover {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.light-box img {
+  width: 75vw;
+  max-height: 70vh;
+}
+
+.light-box:target {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cerrar {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: aqua;
+  color: bisque;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.siguiente {
+  display: block;
+  background: aqua;
+  color: bisque;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* familia panga*/
+.presentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.tobi, .juancruz, .simon, .pablo {
+  padding-top: 5vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.perfilTobi, .perfilJuan, .perfilSimon, .perfilPablo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  padding-left: 9vh;
+  padding-top: 7vh;
+}
+
+.tobi img, .juancruz img, .simon img, .pablo img {
+  width: 44vh;
+  height: 29vh;
+}
+
+.tituloFamilia {
+  text-align: center;
+  margin-left: 30vh;
+  font-size: 11vh;
+}
+
+.pablo {
+  padding-bottom: 2vh;
+}
+
+/*contacto*/
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding-bottom: 41vh;
+  padding-top: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulario h1 {
+  font-size: 9vh;
+}
+
+form {
+  padding-top: 6vh;
+}
+
+.nombre, .comentario {
+  width: 60vh;
+}
+
+.comentario {
+  height: 9vh;
+}
+
+.email {
+  width: 47vh;
+}
+/*# sourceMappingURL=estilos.css.map */
