@@ -1,34 +1,84 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
- 
+
+
+
+
 *{
    padding: 0;
    margin:0;
-}
- 
-
-h2, h3, p, figcaption{
    font-family: 'Original Surfer', cursive;
-   
+}
+
+footer{
+    width:100%;
+    background-color: lightblue ;
+    h2{
+        font-size: 2vh;
+    }
+    p{
+        font-size: 1.2vh;
+    }
+    small{
+        font-size: .8vh;
+    }
+    .grupo1{
+        width:100%;
+        max-width:1200px;
+        margin:auto;
+    }
+}
+
+.red-social{
+    display:flex;
+    gap:1px;
+}
+
+/*mapa*/
+
+$redes:(
+    twitter: #55acee,
+    facebook: #3a5795,
+    instagram: #C25E30,
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
 }
  
 header{
-   background-color: lightblue;
-   height: 2cm;
-   display: flex;
-   flex-flow: row nowrap;
-
-}
-
-.logo{
-   width: 10%;
-   height:100%;
-}
+    background-color: lightblue;
+    height: 2cm;
+    display: flex;
+    flex-flow: row nowrap;
+    .logo{
+     width: 10%;
+     height:100%;
+  }
+    nav{
+     display: flex;
+     width:90%;
+     justify-content: space-around;
+     align-items: center;
+     ul{
+         display: flex;
+         justify-content: space-evenly;
+         li{
+             list-style: none;
+             a{
+                 text-decoration:none ;
+                 color:black;
+                 font-size: 16px;
+                 margin: 1cm;
+              }
+           }
+         }
+     }
  
-ul li{
-  list-style: none;
- 
-}
- 
+ }
 p{
    color:black;
 }
@@ -40,43 +90,33 @@ p{
    padding: 40px;
    padding-bottom: 40px;
    font-size: 0.5cm;
+   h1{
+    text-align: center;
+ }
 }
  
 
-.intro h1{
-   text-align: center;
-}
+
  
-nav ul li a{
-   text-decoration:none ;
-   color:black;
-   font-size: 16px;
-   font-family: 'Original Surfer', cursive;
- 
-}
+
 main{
    background-color: cornsilk;
 }
 .claseTitulo{
    font-size: 3cm;
-   font-family: 'Original Surfer', cursive;
 }
  
-footer{
-   background-color: lightblue;
-   font-size: 0.3cm;
-   font-family: sans-serif;
- 
-  
+/*extend*/
+.color{
+    color: black;
 }
-
-
  
 h1{
-   color: black;
+   @extend.color;
    border: whitesmoke;
-   font-family: 'Original Surfer', cursive;
 }
+
+/*fin extend*/
  
 
 
@@ -89,21 +129,6 @@ h1{
 
 }
 
-nav{
-display: flex;
-width:90%;
-justify-content: space-around;
-align-items: center;
-}
-
-ul{
-display: flex;
-justify-content: space-evenly;
-}
-
-ul li a{
-    margin: 1cm;
-}
 
 main{
    display: flex;
@@ -116,6 +141,12 @@ main{
    justify-content: flex-start;
    align-items: flex-start;
    margin-bottom: 6vw;
+}
+
+/*mixin*/
+@mixin dimensiones ($width, $height) {
+    height: $height;
+    width: $width;
 }
 
 .mainIndex{
@@ -131,12 +162,13 @@ main{
    align-content: center;
    padding-top: 2cm;
    height:26cm;
+    img{
+        @include dimensiones (150,150);
+
+    }
 }
 
-.mainIndex img{
-   width: 150px;
-   height: 150px;
-}
+
 
 .intro{
    grid-area: intro;
@@ -148,6 +180,10 @@ main{
    grid-column: 3/3;
    height: 100%;
    width: 100%;
+   img {
+    width: 100%;
+    height: 60%;
+ }
 }
 
 
@@ -168,21 +204,12 @@ main{
    grid-column:1/1;
    height: 100%;
    width: 100%;
+    img {
+    width: 100%;
+    height: 60%;
+ }
 
 }
-
-.imagenDerecha img {
-   width: 100%;
-   height: 60%;
-}
-
-.imagenIzquierda img {
-   width: 100%;
-   height: 60%;
-}
-
-
-
 
 
 /*galeria*/
@@ -192,10 +219,6 @@ main{
    font-size: 10vw;
 }
 
-
-
-
-
 .galeria{
    display: grid;
    grid-template-rows:  1fr 1fr 1fr ;
@@ -204,9 +227,21 @@ main{
                         "vistas insta"
                         "momentos insta";
    height: 100%;
+   h2{
+    width: 100%;
+ }
+ figure{
+    width:18,5%;
+ }
+ img{
+    width: 180px;
+    height: 115px;
+ }
+ blockquote{
+    width: 20vh;
+    height: 70vh;
+ }
 }
-
-
 
 .momentos{
  grid-area: momentos; 
@@ -243,23 +278,6 @@ grid-row: 1/1;
 
 }
 
-.galeria h2{
-   width: 100%;
-}
-
-.galeria figure{
-   width:18,5%;
-}
-
-.galeria img{
-   width: 180px;
-   height: 115px;
-}
-.galeria blockquote{
-   width: 20vh;
-   height: 70vh;
-}
-
 
 /*celular*/
 
@@ -269,6 +287,9 @@ grid-row: 1/1;
       flex-flow: row wrap;
       justify-content: start;
       padding-bottom:2cm;
+      blockquote{
+        width: 49vh;
+        height: 70vh; }
 
 
 
@@ -279,16 +300,13 @@ grid-row: 1/1;
       font-size:5px;
    }
 
-   .galeria blockquote{
-      width: 49vh;
-      height: 70vh; }
+ 
 
 
    nav ul li a {
       text-decoration: none;
       color: black;
       font-size: 7px;
-      font-family: 'Original Surfer', cursive;
   }
   
   ul li a {
@@ -411,15 +429,17 @@ li:hover{
    grid-gap: 10px;
    padding: 40px 0;
    overflow: hidden;
+   img{
+    width: 100%;
+    height: 300px;
+    vertical-align: top;
+    object-fit: cover;
+    transition: transform 0.5s;
+ }
+ 
 }
 
-.catalogo img{
-   width: 100%;
-   height: 300px;
-   vertical-align: top;
-   object-fit: cover;
-   transition: transform 0.5s;
-}
+
 
 .galeria > a{
    display:block;
@@ -446,12 +466,12 @@ li:hover{
    justify-content:center;
    align-items: center;
    transform: scale(0);
+   img{
+    width:75vw;
+    max-height: 70vh;
+ }
 }
 
-.light-box img{
-   width:75vw;
-   max-height: 70vh;
-}
 
 .light-box:target{
    transform: scale(1);
@@ -545,12 +565,13 @@ li:hover{
    padding-bottom: 41vh;
    padding-top: 10vh;
    align-items: center;
+   h1{
+    font-size: 9vh;
+ }
 
 }
 
-.formulario h1{
-   font-size: 9vh;
-}
+
 
 form{
    padding-top: 6vh;

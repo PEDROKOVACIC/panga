@@ -1,0 +1,37 @@
+footer{
+    width:100%;
+    background-color: lightblue ;
+    h2{
+        font-size: 2vh;
+    }
+    p{
+        font-size: 1.2vh;
+    }
+    small{
+        font-size: .8vh;
+    }
+    .grupo1{
+        width:100%;
+        max-width:1200px;
+        margin:auto;
+    }
+}
+
+.red-social{
+    display:flex;
+    gap:1px;
+}
+
+/*mapa*/
+
+$redes:(
+    twitter: #55acee,
+    facebook: #3a5795,
+    instagram: #C25E30,
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
