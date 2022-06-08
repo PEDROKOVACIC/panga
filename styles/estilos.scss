@@ -166,6 +166,7 @@ main{
         @include dimensiones (150,150);
 
     }
+    padding-bottom: 26vh;
 }
 
 
@@ -331,7 +332,6 @@ grid-row: 1/1;
    flex-wrap:wrap;
    height:44cm;
    padding-bottom: 1cm;
-   padding-bottom: 26vh;
 }
 .imagenIzquierda{
    width:100%;

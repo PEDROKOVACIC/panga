@@ -186,6 +186,7 @@ main {
       align-content: center;
   padding-top: 2cm;
   height: 26cm;
+  padding-bottom: 26vh;
 }
 
 .mainIndex img {
