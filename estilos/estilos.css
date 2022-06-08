@@ -370,13 +370,11 @@ main {
     width: 49vh;
     height: 70vh;
   }
-  header {
-    font-size: 5px;
-  }
-  nav ul li a {
+  header nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 7px;
+    margin: 2vh;
   }
   ul li a {
     margin: 2vh;
@@ -427,15 +425,34 @@ main {
     height: 25%;
     margin-bottom: 23vh;
   }
+  .vistas {
+    margin-top: 1vh;
+  }
   blockquote {
     min-width: none;
+  }
+  .intro {
+    margin-top: 27vh;
+  }
+  /*familia panga*/
+  .tituloFamilia {
+    margin-left: 0vh;
+    font-size: 7vh;
+  }
+  .tobi img, .juancruz img, .simon img, .pablo img {
+    width: 26vh;
+    height: 28vh;
+  }
+  /*contacto*/
+  .formulario h1 {
+    font-size: 7vh;
   }
 }
 
 /*tablet*/
 @media screen and (max-width: 768px) {
-  nav ul li a {
-    font-size: 11px;
+  header nav ul li a {
+    font-size: 10px;
   }
   .mainIndex {
     padding-top: 0cm;
@@ -591,7 +608,49 @@ li:hover {
   flex-flow: row wrap;
 }
 
-.tobi, .juancruz, .simon, .pablo {
+.simon {
+  padding-top: 5vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.tobi {
+  padding-top: 5vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.juancruz {
+  padding-top: 5vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.pablo {
   padding-top: 5vh;
   width: 100%;
   display: -webkit-box;
@@ -650,6 +709,44 @@ li:hover {
 
 .formulario h1 {
   font-size: 9vh;
+}
+
+form {
+  font-size: 22px;
+}
+
+.nombre {
+  margin-bottom: 3vh;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+.comentario {
+  margin-top: 3vh;
+  padding-right: 10vh;
+}
+
+.email {
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.edad {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.no {
+  margin-bottom: 3vh;
+}
+
+.enviar {
+  margin-right: 3vh;
+  padding: 2vh 2vh 2vh 2vh;
+}
+
+.reset {
+  padding: 2vh 2vh 2vh 2vh;
 }
 
 form {
