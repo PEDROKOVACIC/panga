@@ -166,7 +166,7 @@ main{
         @include dimensiones (150,150);
 
     }
-    padding-bottom: 26vh;
+    padding-bottom: 30vh;
 }
 
 
@@ -280,159 +280,9 @@ grid-row: 1/1;
 }
 
 
-
-/*celular*/
-
-@media screen and (max-width:320px){
-   .galeria{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: start;
-      padding-bottom:2cm;
-      blockquote{
-        width: 49vh;
-        height: 70vh; }
+/*nuestras tablas*/
 
 
-
-
-   }
-
-   header nav ul li a {
-      text-decoration: none;
-      color: black;
-      font-size: 7px;
-      margin:2vh;
-  }
-  
-  ul li a {
-      margin: 2vh;
-  }
-  ul li{
-     display: flex;
-     flex-flow: row wrap;
-  }
-
-  .galeria blockquote{
-   width: 56vh;
-   height: 70vh;
-}
-
-   .galeria img{
-   width: 320px;
-   height: 182px;
-}
-
-
-
-
-.mainIndex{
-   display: flex;
-   flex-direction: row; 
-   flex-wrap:wrap;
-   height:44cm;
-   padding-bottom: 1cm;
-}
-.imagenIzquierda{
-   width:100%;
-   height:25%;
-}
-.imagenDerecha{
-   width:100%;
-   height:25%;
-
-}
-
-.titulo{
-   padding-top:8vh;
-}
-
-.videoPanga{
-   width:96%;
-   height:25%;
-   margin-bottom: 23vh;
-}
-
-
-
-
-.vistas{
-   margin-top: 1vh;
-}
-blockquote{
-   min-width: none;
-
-}
-.intro{
-   margin-top: 27vh;
-}
-
-/*familia panga*/
-
-.tituloFamilia{
-   margin-left:0vh;
-   font-size:7vh;
-}
-.tobi img, .juancruz img, .simon img, .pablo img {
-   width: 26vh;
-   height: 28vh;
-
-}
-
-/*contacto*/
-.formulario h1{
-   font-size:7vh;
-}
-}
-
-
-
-
-/*tablet*/
-@media screen and (max-width:768px){
-   header nav ul li a {
-      font-size: 10px;
-  }
-
-  .mainIndex {
-   padding-top: 0cm;
-  }
-
-   ul li a {
-      margin: 2vh;
-  }
-
-  nav {
-   justify-content: flex-start;
-  }
-
-  .imagenDerecha{
-     width:80%;
-  }
-
-  .imagenIzquierda{
-     width:80%;
-  }
-
-
-
-  }
-
-
-
-
-
-/* animaciones generales */
-
-li:hover{
-   transform: scale(1,5);
-   transition-property: all;
-   transition-duration: 1s;
-
-}
-
-
-/* nuestras tablas*/
 .linea{
    background: black;
    height: 5px;
@@ -690,3 +540,319 @@ form{
    width:47vh;
 
 }
+
+
+
+
+/* animaciones generales*/
+
+li:hover{
+   transform: scale(1,5);
+   transition-property: all;
+   transition-duration: 1s;
+
+}
+
+
+/*tablet 768*/
+@media (max-width: 768px){
+   header nav ul li a{
+      margin: 3vw;
+   }
+}
+
+
+/*celular invertido 480*/
+
+@media (max-width: 480px){
+   header nav ul li a{
+      font-size:12px;
+      margin: 1vw;
+   }
+
+   header nav{
+      justify-content: space-between;
+   }
+
+   /*nosotros*/
+   .mainIndex{
+      display: flex;
+      flex-flow: row wrap;
+      height: auto;
+      padding-top: 2vh;
+      .imagenDerecha{
+         height: 0%;
+         width: auto;
+         padding-top:2vh;
+         img{
+            width: 84%;
+            padding-left: 3vw;
+            padding-bottom:1vh;
+
+         }
+         figcaption{
+            padding-left:2vw;
+            padding-right: 9vw;
+
+         }
+      }
+      .videoPanga{
+         height: 0%;
+         width: auto;
+         padding-top: 1vh;
+         padding-bottom: 3vh;
+         padding-top: 3vh;
+         padding-right:9vw;
+      }
+      .imagenIzquierda{
+         height: 0%;
+         width:auto;
+         img{
+            width: 84%;
+            padding-left: 3vw;
+            padding-bottom:1vh;
+         }
+         figcaption{
+            padding-left:2vw;
+            padding-right: 9vw;
+         }
+      }
+      .intro{
+         p{
+            padding-right: 9vw;
+            padding-top: 3vh;
+         }
+      }
+
+   
+   }
+
+   /*familiapanga*/
+
+   .tituloFamilia{
+      margin-left: 0vh;
+      font-size: 9vh;
+   }
+   .presentacion{
+      display: flex;
+      flex-flow: column wrap;
+
+   }
+   .tobi{
+      display: flex;
+      flex-flow: column wrap ;
+      img{
+         padding-left: 6vw;
+      }
+   }
+
+   .perfilTobi{
+      padding-left: 3vh;
+
+   }
+
+   .juancruz{
+      flex-flow: row wrap-reverse;
+
+   }
+   .perfilJuan{
+      padding-left: 3vh;
+   }
+
+   .simon{
+      flex-flow: column wrap;
+      img{
+         padding-left: 6vw;
+      }
+   }
+   
+
+   .perfilSimon{
+      padding-left: 3vh;
+   }
+
+   .pablo{
+      flex-flow: row wrap-reverse;
+   }
+
+   .perfilPablo{
+      padding-left: 0vh;
+      padding-bottom: 2vh;
+      margin-right: 38vw;
+   }
+
+   /*galeria*/
+
+   .galeria{
+      display:flex;
+      flex-flow: row wrap;
+      padding-bottom: 2vh;
+      h2{
+         padding-top: 2vh;
+         font-size: 6vh;
+      }
+      img{
+         width: 477px;
+         height: 210px;
+      }
+      .insta{
+         width: 100%;
+         padding-top: 2vh;
+         margin-bottom: 22vh;
+      }
+   
+   }
+
+   /*contacto*/
+
+   .formulario h1{
+      font-size: 6vh;
+   }
+   article{
+      padding-left: 2vh;
+   }
+   form{
+      display:flex;
+      flex-flow: row wrap;
+      align-items: center;
+      width: 90vw;
+   }
+   .email{
+      width: 100%;
+   }
+   
+   .comentario{
+      width: 60vw;
+   }
+   
+   
+
+
+
+
+
+}
+
+/*celular 320*/
+
+
+
+@media (max-width: 320px){
+   .mainIndex{
+      display: flex;
+      flex-flow: row wrap;
+      height: auto;
+      padding-top: 2vh;
+      .imagenDerecha{
+         height: 0%;
+         width: auto;
+      }
+      .videoPanga{
+         height: 0%;
+         width: auto;
+         padding-top: 1vh;
+         padding-bottom: 3vh;
+         padding-top: 3vh;
+      }
+      .imagenIzquierda{
+         height: 0%;
+         width:auto;
+      }
+
+   
+   }
+
+   header nav ul li a{
+      margin: 1vh;
+      font-size: 7px;
+   }
+
+   /*familia panga*/
+      .tituloFamilia{
+      margin-left: 0vh;
+      font-size: 9vh;
+   }
+   .presentacion{
+      display: flex;
+      flex-flow: column wrap;
+
+   }
+   .tobi{
+      display: flex;
+      flex-flow: column wrap ;
+   }
+
+   .perfilTobi{
+      padding-left: 0vh;
+
+   }
+
+   .juancruz{
+      flex-flow: row wrap-reverse;
+
+   }
+   .perfilJuan{
+      padding-left: 0vh;
+   }
+
+   .simon{
+      flex-flow: column wrap;
+   }
+
+   .perfilSimon{
+      padding-left: 0vh;
+   }
+
+   .pablo{
+      flex-flow: row wrap-reverse;
+   }
+
+   .perfilPablo{
+      padding-left: 0vh;
+   }
+
+
+
+/*galeria*/
+.galeria{
+   display:flex;
+   flex-flow: row wrap;
+   padding-bottom: 2vh;
+   img{
+      width: 303px;
+      height: 136px;
+   }
+   .insta{
+      width: 100%;
+   }
+
+}
+
+
+/*contacto*/
+
+.formulario h1{
+   font-size: 6vh;
+}
+article{
+   padding-left: 2vh;
+}
+form{
+   display:flex;
+   flex-flow: row wrap;
+   align-items: center;
+   width: 90vw;
+}
+.email{
+   width: 100%;
+}
+
+.comentario{
+   width: 60vw;
+}
+
+}
+
+
+
+
