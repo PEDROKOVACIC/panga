@@ -264,6 +264,7 @@ main {
 
 .galeria h2 {
   width: 100%;
+  font-size: 7vh;
 }
 
 .galeria figure {
@@ -271,8 +272,8 @@ main {
 }
 
 .galeria img {
-  width: 180px;
-  height: 115px;
+  width: 186px;
+  height: 141px;
 }
 
 .galeria blockquote {
@@ -295,6 +296,8 @@ main {
   grid-column: 1/1;
   -ms-grid-row: 3;
   grid-row: 3/3;
+  padding-bottom: 9vh;
+  padding-left: 3vw;
 }
 
 .vistas {
@@ -312,6 +315,8 @@ main {
   grid-column: 1/1;
   -ms-grid-row: 2;
   grid-row: 2/2;
+  padding-bottom: 9vh;
+  padding-left: 3vw;
 }
 
 .surf {
@@ -329,6 +334,8 @@ main {
   grid-column: 1/1;
   -ms-grid-row: 1;
   grid-row: 1/1;
+  padding-bottom: 9vh;
+  padding-left: 3vw;
 }
 
 .insta {
@@ -648,6 +655,14 @@ li:hover {
 @media (max-width: 768px) {
   header nav ul li a {
     margin: 3vw;
+  }
+  /*nosotros*/
+  .mainIndex .videoPanga {
+    width: 95%;
+  }
+  /*galeria*/
+  .insta {
+    padding-right: 4vw;
   }
 }
 
